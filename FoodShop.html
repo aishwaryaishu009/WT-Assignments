@@ -1,0 +1,145 @@
+<header id="head">
+    <h1>Online FoodShop</h1>
+</header>
+<style>
+    #head {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#head h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+}
+
+.card button {
+    background-color: violet;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.card button:hover {
+    background-color: green;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+</style>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="card-container">
+    <div class="card">
+        <img src="C:\Users\Saraiah\OneDrive\Desktop\web techologies\butter naan.jpeg" alt="Image 1">
+        <div class="card-content">
+            <h2>Butter naan</h2>
+            <p>Food Item1</p>
+        </div>
+        <button>Add to cart</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Saraiah\OneDrive\Desktop\web techologies\burger.jpeg" alt="Image 2">
+        <div class="card-content">
+            <h2>Burger</h2>
+            <p>Food Item2</p>
+        </div>
+        <button>Add to cart</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Saraiah\OneDrive\Desktop\web techologies\chicken.jpeg" alt="Image 3">
+        <div class="card-content">
+            <h2>Chicken Biryani</h2>
+            <p>Food Item3</p>
+        </div>
+        <button>Add to cart</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Saraiah\OneDrive\Desktop\web techologies\mutton.jpeg" alt="Image 4">
+        <div class="card-content">
+            <h2>mutton Biryani</h2>
+            <p>Food Item4</p>
+        </div>
+        <button>Add to cart</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Saraiah\OneDrive\Desktop\web techologies\soft.jpeg" alt="Image 5">
+        <div class="card-content">
+            <h2>soft drink</h2>
+            <p>Food Item5</p>
+        </div>
+        <button>Add to cart</button>
+    </div>
+</div>
